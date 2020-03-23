@@ -7,14 +7,21 @@ const HashTable = function() {
 
 HashTable.prototype.insert = function(k, v) {
   const index = getIndexBelowMaxForKey(k, this._limit);
+  this._storage.set(index, v);
 };
 
 HashTable.prototype.retrieve = function(k) {
   const index = getIndexBelowMaxForKey(k, this._limit);
+  return this._storage.get(index);
 };
 
 HashTable.prototype.remove = function(k) {
   const index = getIndexBelowMaxForKey(k, this._limit);
+  this._storage.each((target, i, storage) => {
+    if(index === i) {
+      storage[i] = undefined;
+    }
+  });
 };
 
 /*
