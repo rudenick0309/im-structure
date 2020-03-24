@@ -11,7 +11,7 @@ const runner = require("./testRunner");
 //   require("../src/functional/queue")
 // );
 
-// Test for Functional-shared style
+// // Test for Functional-shared style
 
 // runner(
 //   "functional-shared",
@@ -19,7 +19,7 @@ const runner = require("./testRunner");
 //   require("../src/functional-shared/queue")
 // );
 
-// Test for Prototypal style
+// // Test for Prototypal style
 
 // runner(
 //   "prototypal",
