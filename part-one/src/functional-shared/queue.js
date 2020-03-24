@@ -15,13 +15,13 @@ var extend = function(to, from) {
   for(let key in from) {
     to[key] = from[key];
   }
-}
+};
 
 var queueMethods = {};
 
 queueMethods.enqueue = function(value) {
-this.storage[this.rear] = value;
-this.rear += 1;
+  this.storage[this.rear] = value;
+  this.rear += 1;
 };
 
 queueMethods.dequeue = function() {
@@ -32,10 +32,10 @@ queueMethods.dequeue = function() {
 };
 
 queueMethods.size = function() {
-return this.rear - this.front;
+  return this.rear - this.front;
 };
 
-if (typeof module === "object" && typeof module.exports === "object") {
+if (typeof module === 'object' && typeof module.exports === 'object') {
   module.exports = {
     Queue,
     queueMethods

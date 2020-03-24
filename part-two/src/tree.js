@@ -27,7 +27,7 @@ treeMethods.contains = function(target) {
       if(newChildren[i].value === target) {
         return true;
       } else if(findTarget(target, newChildren[i].children)) {
-          return true;
+        return true;
       }
     }
     return false;

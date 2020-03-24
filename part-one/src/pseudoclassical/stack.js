@@ -8,7 +8,7 @@ const Stack = function() {
 Stack.prototype.push = function(value) {
   this.storage[this.count] = value;
   this.count += 1;
-}
+};
 
 Stack.prototype.pop = function() {
   if(this.count < 1) {
@@ -18,11 +18,11 @@ Stack.prototype.pop = function() {
   delete this.storage[this.count - 1];
   this.count -= 1;
   return deleteObj;
-}
+};
 
 Stack.prototype.size = function() {
   return this.count;
-}
+};
 
 module.exports = {
   Stack

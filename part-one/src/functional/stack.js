@@ -25,7 +25,7 @@ const Stack = function() {
   return someInstance;
 };
 
-if (typeof module === "object" && typeof module.exports === "object") {
+if (typeof module === 'object' && typeof module.exports === 'object') {
   module.exports = {
     Stack
   };

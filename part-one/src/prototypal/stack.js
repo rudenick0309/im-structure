@@ -12,7 +12,7 @@ const stackMethods = {};
 stackMethods.push = function(value) {
   this.storage[this.count] = value;
   this.count += 1;
-}
+};
 
 stackMethods.pop = function() {
   if(this.count < 1) {
@@ -22,11 +22,11 @@ stackMethods.pop = function() {
   delete this.storage[this.count - 1];
   this.count -= 1;
   return deleteObj;
-}
+};
 
 stackMethods.size = function() {
   return this.count;
-}
+};
 
 module.exports = {
   Stack,
